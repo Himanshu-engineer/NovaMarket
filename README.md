@@ -12,14 +12,14 @@
 [![Wallets](https://img.shields.io/badge/StellarWalletsKit-Freighter%20%C2%B7%20xBull%20%C2%B7%20Albedo%20%2B%20more-6E56CF)](https://stellarwalletskit.dev)
 [![TanStack Query](https://img.shields.io/badge/TanStack%20Query-v5-FF4154?logo=reactquery&logoColor=white)](https://tanstack.com/query)
 [![Zustand](https://img.shields.io/badge/Zustand-state-443E38?logo=react&logoColor=white)](https://zustand.docs.pmnd.rs)
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)](https://nova-market-dapp.vercel.app/)
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)](https://nova-marketdapp.vercel.app/)
 [![License](https://img.shields.io/badge/License-MIT-97CA00)](LICENSE)
 
 **Mint. List. Bid. Offer. Trade.** A full-stack NFT marketplace built on Stellar/Soroban with **fixed-price listings**, **English auctions**, **escrowed offers**, and **creator royalties enforced at the smart-contract level**. Every sale path — purchases, auctions, and accepted offers — distributes royalties atomically. No one can bypass them.
 
 | | |
 |---|---|
-| 🔗 **Live link** | [nova-market-dapp.vercel.app](https://nova-market-dapp.vercel.app/) |
+| 🔗 **Live link** | [nova-marketdapp.vercel.app](https://nova-marketdapp.vercel.app/) |
 | 📜 **Stellar smart contract (Testnet)** | [`CAPTI5FMEUCVNH44T7UVRQDLMLA44FVXY4R36IZRAWQU6VLLGRQUVKTP`](https://stellar.expert/explorer/testnet/contract/CAPTI5FMEUCVNH44T7UVRQDLMLA44FVXY4R36IZRAWQU6VLLGRQUVKTP) |
 | 🧾 **Deploy Transaction** | [`523b1e1fbc4618f8594a1cafe8b40187a6e766ff0e3b755382f4f5481c7df083`](https://stellar.expert/explorer/testnet/tx/523b1e1fbc4618f8594a1cafe8b40187a6e766ff0e3b755382f4f5481c7df083) |
 | 👨‍💻 **Developed by** | [@Himanshu-engineer](https://github.com/Himanshu-engineer) |
@@ -255,7 +255,7 @@ Every push and pull request to `main` runs the GitHub Actions pipeline defined i
 
 Nothing lands on `main` broken — a lint error, type error, failed build, or failing contract test turns the pipeline red.
 
-**Continuous deployment** is handled by Vercel's Git integration: every push to `main` that passes CI is automatically built and deployed to [nova-market-dapp.vercel.app](https://nova-market-dapp.vercel.app/). The smart contract deploys separately via `scripts/deploy.sh` — frontend deploys never touch the chain.
+**Continuous deployment** is handled by Vercel's Git integration: every push to `main` that passes CI is automatically built and deployed to [nova-marketdapp.vercel.app](https://nova-marketdapp.vercel.app/). The smart contract deploys separately via `scripts/deploy.sh` — frontend deploys never touch the chain.
 
 ## Deploying to Vercel
 
@@ -284,7 +284,7 @@ Supplied to the contract constructor during deployment via `__constructor(paymen
 
 | Resource | Link |
 |---|---|
-| Live App | [nova-market-dapp.vercel.app](https://nova-market-dapp.vercel.app/) |
+| Live App | [nova-marketdapp.vercel.app](https://nova-marketdapp.vercel.app/) |
 | Contract on Explorer | [Stellar Expert](https://stellar.expert/explorer/testnet/contract/CAPTI5FMEUCVNH44T7UVRQDLMLA44FVXY4R36IZRAWQU6VLLGRQUVKTP) |
 | Stellar | [stellar.org](https://stellar.org/) |
 | Stellar Developers | [developers.stellar.org](https://developers.stellar.org/) |
