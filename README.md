@@ -23,6 +23,7 @@
 | 📜 **Stellar smart contract (Testnet)** | [`CAPTI5FMEUCVNH44T7UVRQDLMLA44FVXY4R36IZRAWQU6VLLGRQUVKTP`](https://stellar.expert/explorer/testnet/contract/CAPTI5FMEUCVNH44T7UVRQDLMLA44FVXY4R36IZRAWQU6VLLGRQUVKTP) |
 | 🧾 **Deploy Transaction** | [`523b1e1fbc4618f8594a1cafe8b40187a6e766ff0e3b755382f4f5481c7df083`](https://stellar.expert/explorer/testnet/tx/523b1e1fbc4618f8594a1cafe8b40187a6e766ff0e3b755382f4f5481c7df083) |
 | 👨‍💻 **Developed by** | [@Himanshu-engineer](https://github.com/Himanshu-engineer) |
+| 🎬 **Demo Intro Video** | [Watch on Google Drive](https://drive.google.com/file/d/1v5eVxMbYF6-UDfznE3xQZHyBXOVfEkRO/view) |
 
 ## Overview
 
