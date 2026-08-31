@@ -30,10 +30,14 @@ export function WalletButton() {
   const [wallets, setWallets] = useState<ISupportedWallet[]>([]);
   const [loadingWallets, setLoadingWallets] = useState(false);
 
+  const handleOpenChange = (value: boolean) => {
+    setOpen(value);
+    if (value) setLoadingWallets(true);
+  };
+
   useEffect(() => {
     if (!open) return;
     let cancelled = false;
-    setLoadingWallets(true);
     supportedWallets()
       .then((w) => {
         if (!cancelled) setWallets(w);
@@ -87,11 +91,11 @@ export function WalletButton() {
 
   return (
     <>
-      <Button onClick={() => setOpen(true)}>
+      <Button onClick={() => handleOpenChange(true)}>
         <Wallet className="size-4" />
         Connect Wallet
       </Button>
-      <Dialog open={open} onOpenChange={setOpen}>
+      <Dialog open={open} onOpenChange={handleOpenChange}>
         <DialogContent>
           <DialogHeader>
             <DialogTitle>Connect a wallet</DialogTitle>

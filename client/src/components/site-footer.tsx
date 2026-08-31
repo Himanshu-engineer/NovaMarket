@@ -4,7 +4,6 @@ import { GithubIcon } from "@/components/github-icon";
 import {
   CONTRACT_ID,
   EXPLORER_CONTRACT_URL,
-  GITHUB_URL,
 } from "@/lib/config";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
