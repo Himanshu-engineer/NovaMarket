@@ -27,7 +27,7 @@ export const NATIVE_TOKEN_CONTRACT =
 /** Project repository — shown in the footer and on the landing page. */
 export const GITHUB_URL =
   process.env.NEXT_PUBLIC_GITHUB_URL ??
-  "https://github.com/yourusername/nova-market";
+  "https://github.com/Himanshu-engineer/NovaMarket";
 
 export const EXPLORER_TX_URL = (hash: string) =>
   `https://stellar.expert/explorer/testnet/tx/${hash}`;

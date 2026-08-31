@@ -52,7 +52,7 @@ export function SiteFooter() {
             <div className="flex flex-col gap-2">
               <p className="font-medium">Resources</p>
               <a
-                href={"https://github.com/himanshdotrs/NovaMarket"}
+                href={"https://github.com/Himanshu-engineer/NovaMarket"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 text-muted-foreground hover:text-foreground"
@@ -70,13 +70,13 @@ export function SiteFooter() {
                 Contract on Explorer
               </a>
               <a
-                href="https://github.com/himanshdotrs"
+                href="https://github.com/Himanshu-engineer"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 text-muted-foreground hover:text-foreground"
               >
                 <ExternalLink className="size-3.5" />
-                Developed by - Himanshu Sonwane
+                Developed by - Himanshu
               </a>
             </div>
           </div>
@@ -89,7 +89,7 @@ export function SiteFooter() {
             © {new Date().getFullYear()} Nova Market — open source under MIT.
           </p>
           <a
-            href={"https://github.com/himanshdotrs/NovaMarket"}
+            href={"https://github.com/Himanshu-engineer/NovaMarket"}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 hover:text-foreground"
