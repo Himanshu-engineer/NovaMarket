@@ -1,5 +1,6 @@
 # Nova Market
 
+[![CI/CD Pipeline](https://img.shields.io/github/actions/workflow/status/Himanshu-engineer/NovaMarket/ci.yml?branch=main&label=CI%2FCD%20Pipeline&logo=githubactions&logoColor=white)](https://github.com/Himanshu-engineer/NovaMarket/actions/workflows/ci.yml)
 [![Stellar](https://img.shields.io/badge/Stellar-Soroban%20Smart%20Contracts-7B36D9?logo=stellar&logoColor=white)](https://stellar.expert/explorer/testnet/contract/CAPTI5FMEUCVNH44T7UVRQDLMLA44FVXY4R36IZRAWQU6VLLGRQUVKTP)
 [![Rust](https://img.shields.io/badge/Rust-soroban--sdk%2025-DEA584?logo=rust&logoColor=black)](contract/contracts/contract/src/lib.rs)
 [![Next.js](https://img.shields.io/badge/Next.js-16%20(App%20Router)-black?logo=nextdotjs&logoColor=white)](https://nextjs.org)
@@ -241,6 +242,19 @@ The deployment process:
 4. Resolves the native XLM Stellar Asset Contract.
 5. Deploys the marketplace contract with `__constructor(payment_token)`.
 6. Prints the deployed contract ID and writes it to `client/.env.local`.
+
+## CI/CD
+
+Every push and pull request to `main` runs the GitHub Actions pipeline defined in [`.github/workflows/ci.yml`](.github/workflows/ci.yml):
+
+| Job | Steps |
+|---|---|
+| **Frontend** | `bun install --frozen-lockfile` → `bun run lint` (ESLint) → `bun run typecheck` (tsc) → `bun run build` (Next.js production build) |
+| **Contract** | Rust stable toolchain + cargo cache → `cargo test` (all 17 Soroban contract tests) |
+
+Nothing lands on `main` broken — a lint error, type error, failed build, or failing contract test turns the pipeline red.
+
+**Continuous deployment** is handled by Vercel's Git integration: every push to `main` that passes CI is automatically built and deployed to [nova-market-dapp.vercel.app](https://nova-market-dapp.vercel.app/). The smart contract deploys separately via `scripts/deploy.sh` — frontend deploys never touch the chain.
 
 ## Deploying to Vercel
 
